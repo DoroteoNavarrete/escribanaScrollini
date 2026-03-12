@@ -897,6 +897,38 @@ a.contact-card--wpp:hover .contact-card__icon {
   background-color: rgba(37, 211, 102, 0.22);
 }
 
+.contact-card--phone .contact-card__icon {
+  background-color: rgba(52, 183, 241, 0.12);
+  color: #34B7F1;
+}
+
+a.contact-card--phone:hover .contact-card__icon {
+  background-color: rgba(52, 183, 241, 0.22);
+}
+
+.contact-card--email .contact-card__icon {
+  background-color: rgba(234, 67, 53, 0.10);
+  color: #EA4335;
+}
+
+a.contact-card--email:hover .contact-card__icon {
+  background-color: rgba(234, 67, 53, 0.20);
+}
+
+.contact-card--instagram .contact-card__icon {
+  background-color: rgba(225, 48, 108, 0.10);
+  color: #E1306C;
+}
+
+a.contact-card--instagram:hover .contact-card__icon {
+  background-color: rgba(225, 48, 108, 0.20);
+}
+
+.contact-card--location .contact-card__icon {
+  background-color: rgba(66, 133, 244, 0.10);
+  color: #4285F4;
+}
+
 /* ── Row 2: Hours ──────────────────────────────────────── */
 .contact__hours-row {
   background-color: var(--light-gray);
