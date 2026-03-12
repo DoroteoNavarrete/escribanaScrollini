@@ -59,9 +59,9 @@ Imágenes (referenciadas como ../../img/):
 | Slogan          | "Seguridad jurídica con calidez humana."                                                |
 | Rubro           | Estudio Notarial en Uruguay                                                             |
 | Zonas           | Maldonado · Punta del Este · La Barra · Manantiales · La Juanita · José Ignacio · Garzón · San Carlos · Pueblo Edén |
-| WhatsApp        | <!-- TODO: completar número de WhatsApp -->                                             |
-| Email           | <!-- TODO: completar email -->                                                          |
-| Instagram       | <!-- TODO: completar Instagram -->                                                      |
+| WhatsApp        | 094 058 039 (`+59894058039`)                                                            |
+| Email           | escelisascrollini@gmail.com                                                             |
+| Instagram       | https://www.instagram.com/escribanaelisascrollini/                                      |
 | Google Maps     | https://www.google.com/maps/place/Estudio+Scrollini                                    |
 | Rating Google   | ⭐ 5.0                                                                                  |
 
