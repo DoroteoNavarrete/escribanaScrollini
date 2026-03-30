@@ -115,10 +115,16 @@
 
           <div class="hero__image fade-in">
             <div class="hero__image-frame">
-              <img
-                src="img/pdeste2531.jpg"
-                alt="Vista aérea de Punta del Este — Estudio Scrollini"
-              />
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                aria-label="Vista de Punta del Este — Estudio Scrollini"
+              >
+                <source src="img/selected/pde%20(1).mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
 
@@ -302,6 +308,71 @@
                 <span class="about__badge-label">en Google</span>
               </div>
             </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           GALERÍA
+      ═══════════════════════════════════════ -->
+      <section class="section gallery" id="galeria">
+        <div class="container">
+
+          <div class="section__header fade-in">
+            <span class="section__tag">Nuestra región</span>
+            <h2 class="section__title">La Zona Este</h2>
+            <p class="section__subtitle">
+              Punta del Este · La Barra · José Ignacio · Maldonado y alrededores
+            </p>
+          </div>
+
+          <div class="gallery-carousel fade-in" id="galleryCarousel">
+            <div class="gallery-carousel__window">
+              <div class="gallery-carousel__track" id="galleryTrack">
+
+                <div class="gallery-slide">
+                  <img src="img/selected/pde%20(1).jpg" alt="Vista de Punta del Este" loading="lazy" />
+                </div>
+                <div class="gallery-slide">
+                  <img src="img/selected/pde%20(2).jpg" alt="La zona este, Uruguay" loading="lazy" />
+                </div>
+                <div class="gallery-slide">
+                  <img src="img/selected/pde%20(3).jpg" alt="La zona este, Uruguay" loading="lazy" />
+                </div>
+                <div class="gallery-slide">
+                  <img src="img/selected/pde%20(4).jpg" alt="La zona este, Uruguay" loading="lazy" />
+                </div>
+                <div class="gallery-slide">
+                  <img src="img/selected/pde%20(5).jpg" alt="José Ignacio, Uruguay" loading="lazy" />
+                </div>
+
+              </div>
+            </div>
+
+            <button
+              class="gallery-carousel__btn gallery-carousel__btn--prev"
+              id="galleryPrev"
+              aria-label="Foto anterior"
+            >
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <button
+              class="gallery-carousel__btn gallery-carousel__btn--next"
+              id="galleryNext"
+              aria-label="Foto siguiente"
+            >
+              <i data-lucide="chevron-right"></i>
+            </button>
+
+            <div class="gallery-carousel__dots" id="galleryDots">
+              <button class="gallery-carousel__dot active" aria-label="Foto 1"></button>
+              <button class="gallery-carousel__dot" aria-label="Foto 2"></button>
+              <button class="gallery-carousel__dot" aria-label="Foto 3"></button>
+              <button class="gallery-carousel__dot" aria-label="Foto 4"></button>
+              <button class="gallery-carousel__dot" aria-label="Foto 5"></button>
+            </div>
+
           </div>
 
         </div>

@@ -429,7 +429,8 @@ button {
   background: rgba(255, 255, 255, 0.04);
 }
 
-.hero__image-frame img {
+.hero__image-frame img,
+.hero__image-frame video {
   width: 100%;
   height: auto;
   display: block;
@@ -1135,6 +1136,108 @@ a.contact-card--instagram:hover .contact-card__icon {
 }
 
 /* ════════════════════════════════════════════════════════════
+   GALLERY CAROUSEL
+   ════════════════════════════════════════════════════════════ */
+.gallery {
+  background: linear-gradient(160deg, var(--dark) 0%, #3C3637 100%);
+}
+
+.gallery .section__tag  { color: var(--silver); }
+.gallery .section__title { color: var(--white); }
+.gallery .section__subtitle { color: rgba(255, 255, 255, 0.55); }
+
+.gallery-carousel {
+  position: relative;
+  user-select: none;
+}
+
+.gallery-carousel__window {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-carousel__track {
+  display: flex;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.gallery-slide {
+  flex: 0 0 100%;
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+}
+
+.gallery-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.gallery-slide img:hover {
+  transform: scale(1.02);
+}
+
+.gallery-carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--primary);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  transition: background-color var(--transition), transform var(--transition);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.gallery-carousel__btn:hover {
+  background-color: var(--white);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-60%) scale(1.08);
+}
+
+.gallery-carousel__btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+.gallery-carousel__btn--prev { left: 1rem; }
+.gallery-carousel__btn--next { right: 1rem; }
+
+.gallery-carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.125rem;
+}
+
+.gallery-carousel__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(204, 202, 203, 0.35);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.gallery-carousel__dot.active {
+  background-color: var(--silver);
+  transform: scale(1.5);
+}
+
+/* ════════════════════════════════════════════════════════════
    FLOATING WHATSAPP BUTTON
    ════════════════════════════════════════════════════════════ */
 .float-wpp {
@@ -1338,13 +1441,13 @@ a.contact-card--instagram:hover .contact-card__icon {
 
   .hero__image {
     order: 1;
-    padding: 2rem 1.25rem 3.5rem;
+    padding: 0.5rem 0 2.5rem;
     justify-content: center;
-    display: none;
+    display: flex;
   }
 
   .hero__image-frame {
-    max-width: 90%;
+    max-width: 92%;
   }
 
   /* Services */
@@ -1382,6 +1485,7 @@ a.contact-card--instagram:hover .contact-card__icon {
     flex-direction: row;
     width: auto;
     border-radius: 100px;
+    align-self: center;
   }
 
   .about__badge-info {
@@ -1451,5 +1555,14 @@ a.contact-card--instagram:hover .contact-card__icon {
   .footer__nav a {
     padding: 0.5rem 0.25rem;
     padding-right: 1rem;
+  }
+
+  /* Gallery mobile */
+  .gallery-slide {
+    aspect-ratio: 4 / 3;
+  }
+
+  .gallery-carousel__btn {
+    display: none;
   }
 }

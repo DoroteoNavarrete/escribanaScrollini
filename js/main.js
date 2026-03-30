@@ -254,4 +254,67 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 
+  // ──────────────────────────────────────────────────────────
+  // 6. GALLERY CAROUSEL — single image, dots, autoplay, swipe
+  // ──────────────────────────────────────────────────────────
+  const galleryCarouselEl  = document.getElementById('galleryCarousel');
+  const galleryTrack       = document.getElementById('galleryTrack');
+  const gallerySlides      = galleryTrack.querySelectorAll('.gallery-slide');
+  const totalGallery       = gallerySlides.length;
+  const galleryDots        = document.querySelectorAll('.gallery-carousel__dot');
+  let galleryIndex         = 0;
+  let galleryAutoplay      = null;
+
+  function goToGallery(index) {
+    galleryIndex = ((index % totalGallery) + totalGallery) % totalGallery;
+    galleryTrack.style.transform = `translateX(-${galleryIndex * 100}%)`;
+    galleryDots.forEach((dot, i) => dot.classList.toggle('active', i === galleryIndex));
+  }
+
+  document.getElementById('galleryPrev').addEventListener('click', () => {
+    goToGallery(galleryIndex - 1);
+    resetGalleryAutoplay();
+  });
+
+  document.getElementById('galleryNext').addEventListener('click', () => {
+    goToGallery(galleryIndex + 1);
+    resetGalleryAutoplay();
+  });
+
+  galleryDots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      goToGallery(i);
+      resetGalleryAutoplay();
+    });
+  });
+
+  // Touch swipe
+  let galleryTouchStartX = 0;
+
+  galleryTrack.addEventListener('touchstart', (e) => {
+    galleryTouchStartX = e.touches[0].clientX;
+  }, { passive: true });
+
+  galleryTrack.addEventListener('touchend', (e) => {
+    const delta = galleryTouchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(delta) > 50) {
+      delta > 0 ? goToGallery(galleryIndex + 1) : goToGallery(galleryIndex - 1);
+      resetGalleryAutoplay();
+    }
+  }, { passive: true });
+
+  function startGalleryAutoplay() {
+    stopGalleryAutoplay();
+    galleryAutoplay = setInterval(() => goToGallery(galleryIndex + 1), 5000);
+  }
+
+  function stopGalleryAutoplay()  { clearInterval(galleryAutoplay); }
+  function resetGalleryAutoplay() { startGalleryAutoplay(); }
+
+  galleryCarouselEl.addEventListener('mouseenter', stopGalleryAutoplay);
+  galleryCarouselEl.addEventListener('mouseleave', startGalleryAutoplay);
+
+  goToGallery(0);
+  startGalleryAutoplay();
+
 });
