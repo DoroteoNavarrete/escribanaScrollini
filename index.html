@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Quicksand:wght@400&display=swap"
       rel="stylesheet"
     />
 
@@ -39,7 +39,7 @@
       <div class="container navbar__inner">
 
         <a href="#inicio" class="navbar__logo">
-          <img src="img/Screenshot_1.png" alt="Estudio Scrollini" />
+          <img src="img/logoFinal.png" alt="Estudio Scrollini" />
         </a>
 
         <nav class="navbar__nav" id="navMenu" role="navigation">
@@ -98,12 +98,8 @@
         <div class="container hero__inner">
 
           <div class="hero__content fade-in">
-            <span class="hero__badge">
-              Maldonado · Punta del Este · San Carlos · José Ignacio
-            </span>
-            <h1 class="hero__title">Estudio<br />Scrollini</h1>
-            <p class="hero__slogan">Seguridad jurídica con calidez humana.</p>
-            <p class="hero__subtitle">Estudio Notarial en Uruguay</p>
+            <h1 class="hero__title hero__title--quicksand">Scrollini</h1>
+            <p class="hero__subtitle">Estudio Jurídico Notarial</p>
             <blockquote class="hero__quote">
               "Somos lo que hacemos repetidamente. La excelencia, entonces,
               no es un acto, sino un hábito."
@@ -146,14 +142,16 @@
             </p>
           </div>
 
+          <!-- Servicios Notariales -->
+          <div class="services__group-label fade-in">Servicios Notariales</div>
           <div class="services__grid fade-in">
 
             <div class="service-card">
-              <div class="service-card__icon"><i data-lucide="pen-line"></i></div>
-              <h4>Asesoramiento en Contratos</h4>
+              <div class="service-card__icon"><i data-lucide="home"></i></div>
+              <h4>Compraventa de Inmuebles</h4>
               <p>
-                Redacción, revisión y asesoramiento en todo tipo de contratos:
-                arrendamientos, compraventas, hipotecas, prendas y fideicomisos.
+                Escrituración y asesoramiento en operaciones de compraventa,
+                permutas y adjudicaciones de bienes inmuebles.
               </p>
             </div>
 
@@ -167,15 +165,6 @@
             </div>
 
             <div class="service-card">
-              <div class="service-card__icon"><i data-lucide="users"></i></div>
-              <h4>Sucesiones y Herencias</h4>
-              <p>
-                Tramitación completa de procesos sucesorios con
-                acompañamiento personalizado en cada etapa del proceso.
-              </p>
-            </div>
-
-            <div class="service-card">
               <div class="service-card__icon"><i data-lucide="badge-check"></i></div>
               <h4>Certificaciones y Autenticaciones</h4>
               <p>
@@ -185,20 +174,53 @@
             </div>
 
             <div class="service-card">
-              <div class="service-card__icon"><i data-lucide="gavel"></i></div>
-              <h4>Ejecuciones Hipotecarias</h4>
-              <p>
-                Asesoramiento y defensa integral de todas las partes
-                intervinientes en procesos de ejecución hipotecaria.
-              </p>
-            </div>
-
-            <div class="service-card">
               <div class="service-card__icon"><i data-lucide="key"></i></div>
               <h4>Arrendamientos</h4>
               <p>
                 Redacción y certificación de contratos de arrendamiento
                 con todas las garantías legales vigentes en Uruguay.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-card__icon"><i data-lucide="hand-coins"></i></div>
+              <h4>Préstamos Hipotecarios</h4>
+              <p>
+                Asistencia y asesoramiento para la obtención de préstamos
+                hipotecarios con garantías reales sobre inmuebles.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Servicios Jurídicos -->
+          <div class="services__group-label fade-in">Servicios Jurídicos</div>
+          <div class="services__grid fade-in">
+
+            <div class="service-card">
+              <div class="service-card__icon"><i data-lucide="pen-line"></i></div>
+              <h4>Asesoramiento en Contratos</h4>
+              <p>
+                Redacción, revisión y asesoramiento en todo tipo de contratos:
+                arrendamientos, compraventas, hipotecas, prendas y fideicomisos.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-card__icon"><i data-lucide="users"></i></div>
+              <h4>Sucesiones y Herencias</h4>
+              <p>
+                Tramitación completa de procesos sucesorios con
+                acompañamiento personalizado en cada etapa del proceso.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-card__icon"><i data-lucide="gavel"></i></div>
+              <h4>Ejecuciones Hipotecarias</h4>
+              <p>
+                Asesoramiento y defensa integral de todas las partes
+                intervinientes en procesos de ejecución hipotecaria.
               </p>
             </div>
 
@@ -220,24 +242,6 @@
               </p>
             </div>
 
-            <div class="service-card">
-              <div class="service-card__icon"><i data-lucide="hand-coins"></i></div>
-              <h4>Préstamos Hipotecarios</h4>
-              <p>
-                Asistencia y asesoramiento para la obtención de préstamos
-                hipotecarios con garantías reales sobre inmuebles.
-              </p>
-            </div>
-
-            <div class="service-card">
-              <div class="service-card__icon"><i data-lucide="home"></i></div>
-              <h4>Compraventa de Inmuebles</h4>
-              <p>
-                Escrituración y asesoramiento en operaciones de compraventa,
-                permutas y adjudicaciones de bienes inmuebles.
-              </p>
-            </div>
-
           </div>
         </div>
       </section>
@@ -246,11 +250,11 @@
            NOSOTROS
       ═══════════════════════════════════════ -->
       <section class="section about" id="nosotros">
-        <div class="container about__inner">
+        <div class="container">
 
-          <div class="about__text fade-in">
+          <div class="about__intro fade-in">
             <span class="section__tag">Quiénes somos</span>
-            <h2 class="section__title">Escribana Elisa Scrollini</h2>
+            <h2 class="section__title about__intro-title">Estudio Scrollini</h2>
             <p>
               Nuestro estudio está enfocado en brindar soluciones y asesoramiento
               en el ámbito legal civil y comercial, con un acompañamiento cercano
@@ -288,89 +292,66 @@
             </div>
           </div>
 
-          <div class="about__photo-col fade-in">
-            <div class="about__photo-frame">
-              <img
-                src="img/photo.png"
-                alt="Escribana Elisa Scrollini"
-              />
-            </div>
-            <div class="about__photo-badge">
-              <div class="about__badge-stars">
-                <i data-lucide="star"></i>
-                <i data-lucide="star"></i>
-                <i data-lucide="star"></i>
-                <i data-lucide="star"></i>
-                <i data-lucide="star"></i>
-              </div>
-              <div class="about__badge-info">
-                <span class="about__badge-score">5.0</span>
-                <span class="about__badge-label">en Google</span>
-              </div>
-            </div>
+          <div class="about__team-header fade-in">
+            <h3>Conoce nuestro equipo</h3>
           </div>
 
-        </div>
-      </section>
+          <div class="about__team fade-in">
 
-      <!-- ═══════════════════════════════════════
-           GALERÍA
-      ═══════════════════════════════════════ -->
-      <section class="section gallery" id="galeria">
-        <div class="container">
-
-          <div class="section__header fade-in">
-            <span class="section__tag">Nuestra región</span>
-            <h2 class="section__title">La Zona Este</h2>
-            <p class="section__subtitle">
-              Punta del Este · La Barra · José Ignacio · Maldonado y alrededores
-            </p>
-          </div>
-
-          <div class="gallery-carousel fade-in" id="galleryCarousel">
-            <div class="gallery-carousel__window">
-              <div class="gallery-carousel__track" id="galleryTrack">
-
-                <div class="gallery-slide">
-                  <img src="img/selected/pde%20(1).jpg" alt="Vista de Punta del Este" loading="lazy" />
+            <!-- Escribana -->
+            <div class="about__member">
+              <div class="about__member-avatar">E</div>
+              <div class="about__member-info">
+                <span class="about__member-name">Elisa Scrollini</span>
+                <span class="about__member-role">Escribana Notarial</span>
+                <p class="about__member-bio">
+                  Con más de 30 años de ejercicio notarial, Elisa es la referente
+                  del estudio. Su dedicación, trato cercano y sólido conocimiento
+                  jurídico la han convertido en una profesional de referencia
+                  en la zona este de Uruguay.
+                </p>
+                <div class="about__photo-badge">
+                  <div class="about__badge-stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                  </div>
+                  <div class="about__badge-info">
+                    <span class="about__badge-score">5.0</span>
+                    <span class="about__badge-label">en Google</span>
+                  </div>
                 </div>
-                <div class="gallery-slide">
-                  <img src="img/selected/pde%20(2).jpg" alt="La zona este, Uruguay" loading="lazy" />
-                </div>
-                <div class="gallery-slide">
-                  <img src="img/selected/pde%20(3).jpg" alt="La zona este, Uruguay" loading="lazy" />
-                </div>
-                <div class="gallery-slide">
-                  <img src="img/selected/pde%20(4).jpg" alt="La zona este, Uruguay" loading="lazy" />
-                </div>
-                <div class="gallery-slide">
-                  <img src="img/selected/pde%20(5).jpg" alt="José Ignacio, Uruguay" loading="lazy" />
-                </div>
-
               </div>
             </div>
 
-            <button
-              class="gallery-carousel__btn gallery-carousel__btn--prev"
-              id="galleryPrev"
-              aria-label="Foto anterior"
-            >
-              <i data-lucide="chevron-left"></i>
-            </button>
-            <button
-              class="gallery-carousel__btn gallery-carousel__btn--next"
-              id="galleryNext"
-              aria-label="Foto siguiente"
-            >
-              <i data-lucide="chevron-right"></i>
-            </button>
-
-            <div class="gallery-carousel__dots" id="galleryDots">
-              <button class="gallery-carousel__dot active" aria-label="Foto 1"></button>
-              <button class="gallery-carousel__dot" aria-label="Foto 2"></button>
-              <button class="gallery-carousel__dot" aria-label="Foto 3"></button>
-              <button class="gallery-carousel__dot" aria-label="Foto 4"></button>
-              <button class="gallery-carousel__dot" aria-label="Foto 5"></button>
+            <!-- Abogado -->
+            <div class="about__member">
+              <div class="about__member-avatar">A</div>
+              <div class="about__member-info">
+                <span class="about__member-name">Nombre del Abogado</span>
+                <span class="about__member-role">Abogado</span>
+                <p class="about__member-bio">
+                  Especializado en derecho civil y comercial, aporta al equipo
+                  una mirada integral en materia de litigación y asesoramiento
+                  jurídico. Su incorporación fortalece la capacidad del estudio
+                  para acompañar a los clientes en cada etapa del proceso legal.
+                </p>
+                <div class="about__photo-badge">
+                  <div class="about__badge-stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                  </div>
+                  <div class="about__badge-info">
+                    <span class="about__badge-score">5.0</span>
+                    <span class="about__badge-label">en Google</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -821,7 +802,6 @@
         <div class="container">
 
           <div class="section__header fade-in">
-            <span class="section__tag">Hablemos</span>
             <h2 class="section__title">Contacto</h2>
             <p class="section__subtitle">
               Estamos disponibles para ayudarle de lunes a sábado.
@@ -830,31 +810,81 @@
 
           <div class="contact__inner fade-in">
 
-            <!-- Row 1: Botones de acción rápida -->
-            <div class="contact__actions">
+            <!-- Departamentos -->
+            <div class="contact__departments">
 
-              <a
-                href="https://wa.me/59894058039"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-card contact-card--wpp"
-              >
-                <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
-                <span class="contact-card__label">WhatsApp</span>
-                <span class="contact-card__value">094 058 039</span>
-              </a>
+              <!-- Departamento Notarial -->
+              <div class="contact__dept">
+                <div class="contact__dept-label">
+                  <i data-lucide="stamp"></i>
+                  Departamento Notarial
+                </div>
+                <div class="contact__dept-cards">
 
-              <a href="tel:+59894058039" class="contact-card contact-card--phone">
-                <div class="contact-card__icon"><i data-lucide="phone"></i></div>
-                <span class="contact-card__label">Llamadas</span>
-                <span class="contact-card__value">094 058 039</span>
-              </a>
+                  <a
+                    href="https://wa.me/59894058039"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card contact-card--wpp"
+                  >
+                    <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+                    <span class="contact-card__label">WhatsApp</span>
+                    <span class="contact-card__value">094 058 039</span>
+                  </a>
 
-              <a href="mailto:escelisascrollini@gmail.com" class="contact-card contact-card--email">
-                <div class="contact-card__icon"><i data-lucide="mail"></i></div>
-                <span class="contact-card__label">Email</span>
-                <span class="contact-card__value">escelisascrollini@gmail.com</span>
-              </a>
+                  <a href="tel:+59894058039" class="contact-card contact-card--phone">
+                    <div class="contact-card__icon"><i data-lucide="phone"></i></div>
+                    <span class="contact-card__label">Llamadas</span>
+                    <span class="contact-card__value">094 058 039</span>
+                  </a>
+
+                  <a href="mailto:escelisascrollini@gmail.com" class="contact-card contact-card--email">
+                    <div class="contact-card__icon"><i data-lucide="mail"></i></div>
+                    <span class="contact-card__label">Email</span>
+                    <span class="contact-card__value">escelisascrollini<wbr>@gmail.com</span>
+                  </a>
+
+                </div>
+              </div><!-- /Dep. Notarial -->
+
+              <!-- Departamento Jurídico -->
+              <div class="contact__dept">
+                <div class="contact__dept-label">
+                  <i data-lucide="scale"></i>
+                  Departamento Jurídico
+                </div>
+                <div class="contact__dept-cards">
+
+                  <a
+                    href="https://wa.me/598XXXXXXXX"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card contact-card--wpp"
+                  >
+                    <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+                    <span class="contact-card__label">WhatsApp</span>
+                    <span class="contact-card__value">Próximamente</span>
+                  </a>
+
+                  <a href="tel:+598XXXXXXXX" class="contact-card contact-card--phone">
+                    <div class="contact-card__icon"><i data-lucide="phone"></i></div>
+                    <span class="contact-card__label">Llamadas</span>
+                    <span class="contact-card__value">Próximamente</span>
+                  </a>
+
+                  <a href="mailto:contacto@estudioscrollini.com" class="contact-card contact-card--email">
+                    <div class="contact-card__icon"><i data-lucide="mail"></i></div>
+                    <span class="contact-card__label">Email</span>
+                    <span class="contact-card__value">Próximamente</span>
+                  </a>
+
+                </div>
+              </div><!-- /Dep. Jurídico -->
+
+            </div><!-- /contact__departments -->
+
+            <!-- Compartidos: Instagram + Ubicación -->
+            <div class="contact__shared">
 
               <a
                 href="https://www.instagram.com/escribanaelisascrollini/"
@@ -867,13 +897,13 @@
                 <span class="contact-card__value">@escribanaelisascrollini</span>
               </a>
 
-              <div class="contact-card contact-card--location">
+              <a href="#mapa" class="contact-card contact-card--location">
                 <div class="contact-card__icon"><i data-lucide="map-pin"></i></div>
                 <span class="contact-card__label">Ubicación</span>
                 <span class="contact-card__value">Punta del Este, Maldonado, Uruguay</span>
-              </div>
+              </a>
 
-            </div><!-- /contact__actions -->
+            </div><!-- /contact__shared -->
 
             <!-- Row 2: Horarios -->
             <div class="contact__hours-row">
@@ -894,7 +924,7 @@
             </div><!-- /contact__hours-row -->
 
             <!-- Row 3: Mapa -->
-            <div class="contact__map-row">
+            <div class="contact__map-row" id="mapa">
               <iframe
                 src="https://maps.google.com/maps?q=Estudio+Scrollini,+San+Carlos,+Maldonado,+Uruguay&output=embed"
                 width="100%"
@@ -921,12 +951,9 @@
       <div class="container footer__inner">
 
         <div class="footer__brand">
-          <a href="#inicio" class="footer__logo">
-            <img src="img/Logo_fondo-blanco.png" alt="Estudio Scrollini" />
-          </a>
           <div class="footer__brand-text">
-            <span class="footer__brand-name">Estudio Scrollini</span>
-            <span class="footer__brand-slogan">Seguridad jurídica con calidez humana.</span>
+            <span class="footer__brand-name">Scrollini</span>
+            <span class="footer__brand-slogan">Estudio Jurídico Notarial</span>
           </div>
         </div>
 
@@ -940,7 +967,7 @@
 
       </div>
       <div class="container footer__copy-row">
-        <p>© 2026 Estudio Scrollini. Todos los derechos reservados.</p>
+        <p>© 2026 Scrollini Estudio Jurídico Notarial. Todos los derechos reservados.</p>
         <p class="footer__dev">Desarrollado por <a href="https://www.netguay.com" target="_blank" rel="noopener noreferrer">NetGuay</a></p>
       </div>
     </footer>
