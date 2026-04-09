@@ -376,12 +376,6 @@ button {
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.55);
 }
 
-.hero__title--quicksand {
-  font-family: 'Quicksand', var(--font);
-  font-weight: 400;
-  letter-spacing: 0.01em;
-}
-
 .hero__slogan {
   font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
   color: var(--silver);
